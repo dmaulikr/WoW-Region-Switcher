@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 WeZZard Design. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		633397E1199DB29B00C494B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 633397E0199DB29B00C494B4 /* main.m */; };
-		633397E4199DB29B00C494B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633397E3199DB29B00C494B4 /* ViewController.m */; };
+		633397E4199DB29B00C494B4 /* WRSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633397E3199DB29B00C494B4 /* WRSRootViewController.m */; };
 		633397E7199DB29B00C494B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 633397E6199DB29B00C494B4 /* AppDelegate.m */; };
 		633397E9199DB29B00C494B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633397E8199DB29B00C494B4 /* Images.xcassets */; };
 		633397EC199DB29C00C494B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633397EA199DB29C00C494B4 /* Main.storyboard */; };
 		633397F8199DB29C00C494B4 /* WoW_Region_SwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633397F7199DB29C00C494B4 /* WoW_Region_SwitcherTests.m */; };
+		636AA7F519A4563F000E6B99 /* WZFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636AA7EC19A4560D000E6B99 /* WZFoundation.framework */; };
+		636AA7F619A4563F000E6B99 /* WZFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 636AA7EC19A4560D000E6B99 /* WZFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		636AA86919A48998000E6B99 /* WRSConfigDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 636AA86819A48998000E6B99 /* WRSConfigDocument.m */; };
+		636AA86C19A489AC000E6B99 /* WRSLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = 636AA86B19A489AC000E6B99 /* WRSLocale.m */; };
+		636AA86F19A4A9F3000E6B99 /* WRSConfigSentence.m in Sources */ = {isa = PBXBuildFile; fileRef = 636AA86E19A4A9F3000E6B99 /* WRSConfigSentence.m */; };
+		636AA87219A4AEDC000E6B99 /* WRSRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 636AA87119A4AEDC000E6B99 /* WRSRegion.m */; };
+		63C3203819A4DF32004F9BA9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63C3203719A4DF32004F9BA9 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,14 +30,63 @@
 			remoteGlobalIDString = 633397DA199DB29B00C494B4;
 			remoteInfo = "WoW Region Switcher";
 		};
+		636AA7A219A45255000E6B99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636AA79D19A45254000E6B99 /* WZFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63525E28194A2DDD00336537;
+			remoteInfo = WZFoundation;
+		};
+		636AA7A419A45255000E6B99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636AA79D19A45254000E6B99 /* WZFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63525E33194A2DDD00336537;
+			remoteInfo = WZFoundationTests;
+		};
+		636AA7EB19A4560D000E6B99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636AA79D19A45254000E6B99 /* WZFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 636AA7AB19A45285000E6B99;
+			remoteInfo = "WZFoundation OS X";
+		};
+		636AA7ED19A4560D000E6B99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636AA79D19A45254000E6B99 /* WZFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 636AA7B519A45285000E6B99;
+			remoteInfo = "WZFoundation OS XTests";
+		};
+		636AA7F719A4563F000E6B99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636AA79D19A45254000E6B99 /* WZFoundation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 636AA7AA19A45285000E6B99;
+			remoteInfo = "WZFoundation OS X";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		636AA7F919A4563F000E6B99 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				636AA7F619A4563F000E6B99 /* WZFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		633397DB199DB29B00C494B4 /* WoW Region Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoW Region Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		633397DF199DB29B00C494B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633397E0199DB29B00C494B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		633397E2199DB29B00C494B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		633397E3199DB29B00C494B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		633397E2199DB29B00C494B4 /* WRSRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRSRootViewController.h; sourceTree = "<group>"; };
+		633397E3199DB29B00C494B4 /* WRSRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRSRootViewController.m; sourceTree = "<group>"; };
 		633397E5199DB29B00C494B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		633397E6199DB29B00C494B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		633397E8199DB29B00C494B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -38,6 +94,16 @@
 		633397F1199DB29C00C494B4 /* WoW Region SwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WoW Region SwitcherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		633397F6199DB29C00C494B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633397F7199DB29C00C494B4 /* WoW_Region_SwitcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WoW_Region_SwitcherTests.m; sourceTree = "<group>"; };
+		636AA79D19A45254000E6B99 /* WZFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WZFoundation.xcodeproj; path = ../WZFoundation/WZFoundation.xcodeproj; sourceTree = "<group>"; };
+		636AA86719A48998000E6B99 /* WRSConfigDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSConfigDocument.h; sourceTree = "<group>"; };
+		636AA86819A48998000E6B99 /* WRSConfigDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSConfigDocument.m; sourceTree = "<group>"; };
+		636AA86A19A489AC000E6B99 /* WRSLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSLocale.h; sourceTree = "<group>"; };
+		636AA86B19A489AC000E6B99 /* WRSLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSLocale.m; sourceTree = "<group>"; };
+		636AA86D19A4A9F3000E6B99 /* WRSConfigSentence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSConfigSentence.h; sourceTree = "<group>"; };
+		636AA86E19A4A9F3000E6B99 /* WRSConfigSentence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSConfigSentence.m; sourceTree = "<group>"; };
+		636AA87019A4AEDC000E6B99 /* WRSRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSRegion.h; sourceTree = "<group>"; };
+		636AA87119A4AEDC000E6B99 /* WRSRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSRegion.m; sourceTree = "<group>"; };
+		63C3203719A4DF32004F9BA9 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636AA7F519A4563F000E6B99 /* WZFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +131,7 @@
 				633397DD199DB29B00C494B4 /* WoW Region Switcher */,
 				633397F4199DB29C00C494B4 /* WoW Region SwitcherTests */,
 				633397DC199DB29B00C494B4 /* Products */,
+				636AA79D19A45254000E6B99 /* WZFoundation.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,12 +147,16 @@
 		633397DD199DB29B00C494B4 /* WoW Region Switcher */ = {
 			isa = PBXGroup;
 			children = (
-				633397E2199DB29B00C494B4 /* ViewController.h */,
-				633397E3199DB29B00C494B4 /* ViewController.m */,
-				633397E5199DB29B00C494B4 /* AppDelegate.h */,
-				633397E6199DB29B00C494B4 /* AppDelegate.m */,
-				633397E8199DB29B00C494B4 /* Images.xcassets */,
-				633397EA199DB29C00C494B4 /* Main.storyboard */,
+				636AA86D19A4A9F3000E6B99 /* WRSConfigSentence.h */,
+				636AA86E19A4A9F3000E6B99 /* WRSConfigSentence.m */,
+				636AA86719A48998000E6B99 /* WRSConfigDocument.h */,
+				636AA86819A48998000E6B99 /* WRSConfigDocument.m */,
+				636AA86A19A489AC000E6B99 /* WRSLocale.h */,
+				636AA86B19A489AC000E6B99 /* WRSLocale.m */,
+				636AA87019A4AEDC000E6B99 /* WRSRegion.h */,
+				636AA87119A4AEDC000E6B99 /* WRSRegion.m */,
+				633397E2199DB29B00C494B4 /* WRSRootViewController.h */,
+				633397E3199DB29B00C494B4 /* WRSRootViewController.m */,
 				633397DE199DB29B00C494B4 /* Supporting Files */,
 			);
 			path = "WoW Region Switcher";
@@ -93,6 +165,11 @@
 		633397DE199DB29B00C494B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63C3203719A4DF32004F9BA9 /* Localizable.strings */,
+				633397E8199DB29B00C494B4 /* Images.xcassets */,
+				633397EA199DB29C00C494B4 /* Main.storyboard */,
+				633397E5199DB29B00C494B4 /* AppDelegate.h */,
+				633397E6199DB29B00C494B4 /* AppDelegate.m */,
 				633397DF199DB29B00C494B4 /* Info.plist */,
 				633397E0199DB29B00C494B4 /* main.m */,
 			);
@@ -116,6 +193,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		636AA79E19A45254000E6B99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				636AA7A319A45255000E6B99 /* WZFoundation.framework */,
+				636AA7A519A45255000E6B99 /* WZFoundationTests.xctest */,
+				636AA7EC19A4560D000E6B99 /* WZFoundation.framework */,
+				636AA7EE19A4560D000E6B99 /* WZFoundation OS XTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,10 +214,12 @@
 				633397D7199DB29B00C494B4 /* Sources */,
 				633397D8199DB29B00C494B4 /* Frameworks */,
 				633397D9199DB29B00C494B4 /* Resources */,
+				636AA7F919A4563F000E6B99 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				636AA7F819A4563F000E6B99 /* PBXTargetDependency */,
 			);
 			name = "WoW Region Switcher";
 			productName = "WoW Region Switcher";
@@ -177,12 +267,17 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 633397D2199DB29B00C494B4;
 			productRefGroup = 633397DC199DB29B00C494B4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 636AA79E19A45254000E6B99 /* Products */;
+					ProjectRef = 636AA79D19A45254000E6B99 /* WZFoundation.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				633397DA199DB29B00C494B4 /* WoW Region Switcher */,
@@ -191,12 +286,44 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		636AA7A319A45255000E6B99 /* WZFoundation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WZFoundation.framework;
+			remoteRef = 636AA7A219A45255000E6B99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		636AA7A519A45255000E6B99 /* WZFoundationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WZFoundationTests.xctest;
+			remoteRef = 636AA7A419A45255000E6B99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		636AA7EC19A4560D000E6B99 /* WZFoundation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WZFoundation.framework;
+			remoteRef = 636AA7EB19A4560D000E6B99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		636AA7EE19A4560D000E6B99 /* WZFoundation OS XTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "WZFoundation OS XTests.xctest";
+			remoteRef = 636AA7ED19A4560D000E6B99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		633397D9199DB29B00C494B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				633397E9199DB29B00C494B4 /* Images.xcassets in Resources */,
+				63C3203819A4DF32004F9BA9 /* Localizable.strings in Resources */,
 				633397EC199DB29C00C494B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,9 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633397E4199DB29B00C494B4 /* ViewController.m in Sources */,
+				633397E4199DB29B00C494B4 /* WRSRootViewController.m in Sources */,
+				636AA86F19A4A9F3000E6B99 /* WRSConfigSentence.m in Sources */,
 				633397E1199DB29B00C494B4 /* main.m in Sources */,
 				633397E7199DB29B00C494B4 /* AppDelegate.m in Sources */,
+				636AA86919A48998000E6B99 /* WRSConfigDocument.m in Sources */,
+				636AA87219A4AEDC000E6B99 /* WRSRegion.m in Sources */,
+				636AA86C19A489AC000E6B99 /* WRSLocale.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +367,11 @@
 			isa = PBXTargetDependency;
 			target = 633397DA199DB29B00C494B4 /* WoW Region Switcher */;
 			targetProxy = 633397F2199DB29C00C494B4 /* PBXContainerItemProxy */;
+		};
+		636AA7F819A4563F000E6B99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WZFoundation OS X";
+			targetProxy = 636AA7F719A4563F000E6B99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -332,6 +468,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
 				INFOPLIST_FILE = "WoW Region Switcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -343,6 +484,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
 				INFOPLIST_FILE = "WoW Region Switcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,6 +550,7 @@
 				633397FD199DB29C00C494B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		633397FE199DB29C00C494B4 /* Build configuration list for PBXNativeTarget "WoW Region SwitcherTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +559,7 @@
 				63339800199DB29C00C494B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

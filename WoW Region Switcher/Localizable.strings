@@ -1,0 +1,11 @@
+/* 
+  localizable.strings
+  WoW Region Switcher
+
+  Created by Manfred Lau on 8/20/14.
+  Copyright (c) 2014 WeZZard Design. All rights reserved.
+*/
+
+"INVALID WOW CLIENT PATH" = "Please choose the root directory of a World of Warcraft client!\nNeither World of Warcraft-64.app nor World of Warcraft.app were found in the directory!";
+
+"CONFIG.WTF NOT FOUND" = "Config.wtf not found!";
